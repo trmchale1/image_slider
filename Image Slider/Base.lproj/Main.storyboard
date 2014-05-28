@@ -71,6 +71,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="0gD-LU-sCT" id="KcY-V7-4Up"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXF-2q-avM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

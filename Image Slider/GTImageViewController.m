@@ -36,6 +36,8 @@
     NSArray *viewControllers = @[startingViewController];
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
+    NSLog(@"photo = %@", _pageImages[0]);
+    
     // Change the size of page view controller
     self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 30);
     
@@ -53,6 +55,7 @@
     thisControl.hidden = true;
     self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height+40);
     
+    NSLog(@"self %@", self);
     [self.pageViewController didMoveToParentViewController:self];
     
 }
@@ -81,6 +84,7 @@
     // Create a new view controller and pass suitable data.
     PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
     pageContentViewController.imageFile = self.pageImages[index];
+    NSLog(@"? = %@", self.pageImages[0]);
     pageContentViewController.pageIndex = index;
     
     /**
@@ -96,8 +100,10 @@
     
     [self resetTimer];
     
-    
+    NSLog(@"page content view controller = %@", pageContentViewController);
+
     return pageContentViewController;
+    NSLog(@"page content view controller = %@", pageContentViewController);
 }
 
 #pragma mark - Page View Controller Data Source

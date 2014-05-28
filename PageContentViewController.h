@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PageContentViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property NSUInteger pageIndex;
