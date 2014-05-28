@@ -32,7 +32,7 @@
                                                  repeats:NO];
     
 	// Create the data model
-    _pageImages = @[@"photo1.png", @"photo2.png", @"photo3.png", @"photo4.png", @"photo5.png"];
+    _pageImages = @[@"i-Pads_00_txt.png", @"i-Pads_01_txt.png", @"i-Pads_02_txt.png", @"i-Pads_03_txt.png", @"i-Pads_04_txt.png", @"i-Pads_06_txt.png", @"i-Pads_07_txt.png", @"i-Pads_08_txt.png", @"i-Pads_09_txt.png", @"i-Pads_05_txt.png", @"i-Pads_10_txt.png", @"i-Pads_11_txt.png", @"i-Pads_12_txt.png", @"i-Pads_13_txt.png", @"i-Pads_14_txt.png", @"i-Pads_15_txt.png", @"i-Pads_16_txt.png", @"i-Pads_18_txt.png", @"i-Pads_19_txt.png", @"i-Pads_20_txt.png", @"i-Pads_21_txt.png", @"i-Pads_22_txt.png", @"i-Pads_23_txt.png", @"i-Pads_24_txt.png", @"i-Pads_25_txt.png", @"i-Pads_26_txt.png", @"i-Pads_27_txt.png", @"i-Pads_28_txt.png", @"i-Pads_29_txt.png", @"i-Pads_30_txt.png"];
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
@@ -45,7 +45,7 @@
     NSLog(@"photo = %@", _pageImages[0]);
     
     // Change the size of page view controller
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 30);
+    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height); // -30
     
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
@@ -59,7 +59,7 @@
     }
     
     thisControl.hidden = true;
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height+40);
+    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height); // + 40
     
     NSLog(@"self %@", self);
     [self.pageViewController didMoveToParentViewController:self];
