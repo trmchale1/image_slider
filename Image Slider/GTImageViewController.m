@@ -17,10 +17,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    id y = [defaults objectForKey:@"Cheese"];
+    int z = [y integerValue];
+    
+    NSLog(@"z = %d", z);
     
     [self.navigationItem setHidesBackButton:YES];
     self.currentIndex = 0;
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:5.0
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:z
                                                   target:self
                                                 selector:@selector(timerExpired:)
                                                 userInfo:nil
@@ -173,10 +178,15 @@
 
 -(void) resetTimer
 {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    id y = [defaults objectForKey:@"Cheese"];
+    int z = [y integerValue];
+    NSLog(@"z = %d", z);
     if (self.timer != nil)
         [self.timer invalidate];
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:30.0
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:z
                                                   target:self
                                                 selector:@selector(timerExpired:)
                                                 userInfo:nil
