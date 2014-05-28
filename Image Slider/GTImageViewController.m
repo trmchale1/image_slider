@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
     
+    [self.navigationItem setHidesBackButton:YES];
+    
     self.currentIndex = 0;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:5.0
                                                   target:self
