@@ -22,6 +22,8 @@
 		56A2385C1935A20200EA5D88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56A2385A1935A20200EA5D88 /* InfoPlist.strings */; };
 		56A2385E1935A20200EA5D88 /* Image_SliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A2385D1935A20200EA5D88 /* Image_SliderTests.m */; };
 		56A238691935A87800EA5D88 /* GTSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A238681935A87800EA5D88 /* GTSettingsViewController.m */; };
+		56A2386C1935C1CB00EA5D88 /* GTImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A2386B1935C1CB00EA5D88 /* GTImageViewController.m */; };
+		56A2386F1935C3F100EA5D88 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56A2386E1935C3F100EA5D88 /* PageContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		56A2385D1935A20200EA5D88 /* Image_SliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Image_SliderTests.m; sourceTree = "<group>"; };
 		56A238671935A87800EA5D88 /* GTSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTSettingsViewController.h; sourceTree = "<group>"; };
 		56A238681935A87800EA5D88 /* GTSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTSettingsViewController.m; sourceTree = "<group>"; };
+		56A2386A1935C1CB00EA5D88 /* GTImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTImageViewController.h; sourceTree = "<group>"; };
+		56A2386B1935C1CB00EA5D88 /* GTImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTImageViewController.m; sourceTree = "<group>"; };
+		56A2386D1935C3E500EA5D88 /* PageContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		56A2386E1935C3F100EA5D88 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +124,14 @@
 				56A238411935A20200EA5D88 /* GTAppDelegate.h */,
 				56A238421935A20200EA5D88 /* GTAppDelegate.m */,
 				56A238441935A20200EA5D88 /* Main.storyboard */,
+				56A2386A1935C1CB00EA5D88 /* GTImageViewController.h */,
+				56A2386B1935C1CB00EA5D88 /* GTImageViewController.m */,
 				56A238671935A87800EA5D88 /* GTSettingsViewController.h */,
 				56A238681935A87800EA5D88 /* GTSettingsViewController.m */,
 				56A238471935A20200EA5D88 /* GTViewController.h */,
 				56A238481935A20200EA5D88 /* GTViewController.m */,
+				56A2386D1935C3E500EA5D88 /* PageContentViewController.h */,
+				56A2386E1935C3F100EA5D88 /* PageContentViewController.m */,
 				56A2384A1935A20200EA5D88 /* Images.xcassets */,
 				56A238391935A20200EA5D88 /* Supporting Files */,
 			);
@@ -258,7 +268,9 @@
 				56A238691935A87800EA5D88 /* GTSettingsViewController.m in Sources */,
 				56A2383F1935A20200EA5D88 /* main.m in Sources */,
 				56A238491935A20200EA5D88 /* GTViewController.m in Sources */,
+				56A2386C1935C1CB00EA5D88 /* GTImageViewController.m in Sources */,
 				56A238431935A20200EA5D88 /* GTAppDelegate.m in Sources */,
+				56A2386F1935C3F100EA5D88 /* PageContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,7 +39,7 @@
     if ([myTextField canResignFirstResponder]) [myTextField resignFirstResponder];
     someData = *(sliderValue);
     
-    NSLog(@"slidervalue = %d", sliderValue);
+  //  NSLog(@"slidervalue = %d", sliderValue);
     
     NSLog(@"someData = %d", someData);
     
